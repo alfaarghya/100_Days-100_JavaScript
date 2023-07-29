@@ -117,6 +117,9 @@ body {
     color: black;
     transition: 0.3s ease;
 }
+.form-body .link a i {
+    margin-right: 2px;
+}
 .form-body .link  :hover {
     text-decoration: underline;
 }
