@@ -1,1 +1,1 @@
-<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/01-PixelArtPalette/img/PageDemo.png">
+<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/02-TextToSpeech/img/PageDemo.png">
