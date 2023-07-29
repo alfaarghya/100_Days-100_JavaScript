@@ -115,7 +115,6 @@ body {
 .form-body .link a {
     text-decoration: none;
     color: black;
-    
     transition: 0.3s ease;
 }
 .form-body .link  :hover {
