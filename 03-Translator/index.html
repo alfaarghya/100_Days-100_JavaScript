@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator App</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="box">
+      <div class="lang-option-box">
+        <div><i class="fa-solid fa-moon dark-mode all-icon"></i></div>
+        <div class="input-select"><select name="" id=""></select></div>
+        <div class="exchange">
+          <i class="fa-solid fa-arrow-right-arrow-left all-icon"></i>
+        </div>
+        <div class="output-select"><select name="" id=""></select></div>
+        <div><i class="fa-solid fa-sun light-mode all-icon"></i></div>
+      </div>
+      <div class="main-box">
+        <div class="input-box">
+          <textarea name="" id="user-input" placeholder="Text"></textarea>
+          <ul class="options">
+            <li>
+              <i
+                id="inp-speak"
+                class="fa-solid fa-volume-low speakBtn all-icon"
+              ></i>
+            </li>
+            <li>
+              <i id="inp-copy" class="fa-solid fa-copy copyBtn all-icon"></i>
+            </li>
+          </ul>
+        </div>
+        <div class="output-box">
+          <textarea
+            disabled
+            name=""
+            id="translate-output"
+            placeholder="Translate"
+          ></textarea>
+          <ul class="options">
+            <li>
+              <i
+                id="opt-speak"
+                class="fa-solid fa-volume-low speakBtn all-icon"
+              ></i>
+            </li>
+            <li>
+              <i id="opt-copy" class="fa-solid fa-copy copyBtn all-icon"></i>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="link">
+        <a class = "link-a" href="https://github.com/alfaArghya/100_Days-100_JavaScript/tree/main/03-Translator"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i>GitHub</a>
+      </div>
+    </div>
+
+    <script src="js/countries.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
