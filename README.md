@@ -8,7 +8,5 @@ I am learning JavaScript. My goal is to implement 100 JS projects beside learnin
 <img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/02-TextToSpeech/img/PageDemo.png">
 
 ## #day3 Translate App
-<div style = "display:flex;">
 <img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/03-Translator/img/DemoLightImg.png">
-<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/03-Translator/img/DemoDarkImg.png">
-</div>
+
