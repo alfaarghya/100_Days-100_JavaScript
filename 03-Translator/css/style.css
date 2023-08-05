@@ -1,16 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-}
-
-body {
-  /* background-color: black; */
-  /* height: 100vh; */
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Prata', serif;
 }
 
 .box {
-  /* background-color: #fff; */
-  /* border: 2px solid black; */
   box-shadow: #00000033 0px 0px 32px, #0f5bce5e 0px 2px 32px;
   border-radius: 10px;
   position: absolute;
@@ -18,43 +15,30 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 10px;
-  /* height: 20em; */
-  /* margin: 0 0; */
 }
 
 .lang-option-box {
   display: flex;
   justify-content: space-around;
-  /* align-content: center; */
   align-items: baseline;
   margin-bottom: 5px;
 }
 
-.lang-option-box .dark-mode {
-  /* justify-content: ; */
-}
 .lang-option-box .exchange {
   margin: 0 1em;
 }
 
 .lang-option-box div select {
   font-size: 20px;
-  /* width: 10em; */
   height: 30px;
   outline: none;
   border: none;
-  /* background-color: #cbcbcb; */
   border-radius: 5px;
 }
-.lang-option-box div select:hover {
-  /* background-color: #888787; */
-}
+
 .main-box {
-  /* width: 80vw; */
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
-  /* align-content: center; */
   transition: all 0.3 ease;
 }
 
@@ -119,21 +103,23 @@ body {
 .link:hover {
   text-decoration: underline;
 }
-/* ---- */
+
+/* ---- Responsive ---- */
 
 @media (max-width: 930px) {
   .main-box {
     flex-wrap: wrap;
   }
 }
+
 @media (max-width: 480px) {
   .input-box textarea,
   .output-box textarea {
-    /* height: 100px; */
     width: 15em;
   }
 }
-@media (max-width: 410px) {
+
+@media (max-width: 412px) {
   .box {
     width: 85%;
     padding-left: 5px;
@@ -141,7 +127,6 @@ body {
   }
   .input-box textarea,
   .output-box textarea {
-    /* height: 100px; */
     width: 15em;
   }
   .lang-option-box div select {
@@ -151,7 +136,7 @@ body {
   }
 }
 
-/* ---- */
+/* ---- Dark mode ---- */
 
 .body-dark {
   background-color: black;

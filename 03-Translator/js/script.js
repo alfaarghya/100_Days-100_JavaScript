@@ -15,7 +15,7 @@ langOption.forEach((tag, id) => {
         ? countryCode == "en-GB"
           ? "selected"
           : ""
-        : countryCode == "bn-IN"
+        : countryCode == "hi-IN"
         ? "selected"
         : "";
     let option = `<option ${selected} value = "${countryCode}">

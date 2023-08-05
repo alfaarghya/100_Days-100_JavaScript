@@ -1,0 +1,2 @@
+<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/03-Translator/img/DemoLightImg.png">
+<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/03-Translator/img/DemoDarkImg.png">
