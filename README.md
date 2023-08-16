@@ -3,7 +3,7 @@ I am learning JavaScript. My goal is to implement 100 JS projects beside learnin
 Currently I am working on 4 no projest.
 
 ## #day1 PixelArtPalette
-<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/01-PixelArtPalette/img/PageDemo.png">
+<img   src = "01-PixelArtPalette\img\ScreenShot.png">
 
 ## #day2 Text to Speech
 <img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/02-TextToSpeech/img/PageDemo.png">
