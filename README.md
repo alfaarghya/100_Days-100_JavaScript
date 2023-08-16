@@ -6,8 +6,8 @@ Currently I am working on 4 no projest.
 <img   src = "01-PixelArtPalette\img\ScreenShot.png">
 
 ## #day2 Text to Speech
-<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/02-TextToSpeech/img/PageDemo.png">
+<img   src = "02-TextToSpeech/img/PageDemo.png">
 
 ## #day3 Translate App
-<img   src = "https://github.com/alfaArghya/100_Days-100_JavaScript/blob/main/03-Translator/img/DemoLightImg.png">
+<img   src = "03-Translator/img/DemoLightImg.png">
 
