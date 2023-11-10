@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typing Test</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -21,8 +22,10 @@
 
         <textarea name="" id="type" cols="30" rows="10" placeholder="hii"></textarea>
 
-        <button id="start-test">Start Test</button>
-        <button id="stop-test">Stop Test</button>
+        <div class="btn-body">
+            <button id="start-test" onclick="startTest()">Start Test</button>
+            <button id="stop-test" onclick="result()">Stop Test</button>
+        </div>
 
         <div class="result">
             <h3>Result</h3>
@@ -30,6 +33,12 @@
                 <p>Accuracy : <span id="accuracy"></span></p>
                 <p>Speed : <span id="speed"></span></p>
             </div>
+        </div>
+
+        <div class="links">
+            <a href="https://github.com/alfaArghya/100_Days-100_JavaScript/tree/main/05-TypingTest">
+                <i class="ri-github-fill"></i>
+            </a>
         </div>
 
     </div>
