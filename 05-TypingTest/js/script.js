@@ -1,4 +1,31 @@
 /* ---- Page animation Code ---- */
+const pageLoadingAnimation = () => {
+
+    gsap.from(".info", {
+        y: -50,
+        opacity: 0,
+        delay: 0.5,
+    });
+    gsap.from(".typing-area", {
+        opacity: 0,
+        delay: 1,
+    });
+    gsap.from(".btn-body", {
+        y: -50,
+        opacity: 0,
+        delay: 0.5,
+    });
+    gsap.from(".hr", {
+        opacity: 0,
+        delay: 0.2,
+    });
+    gsap.from(".box3", {
+        y: -20,
+        opacity: 0,
+        delay: 0.5,
+    });
+};
+pageLoadingAnimation();
 /* ---- ---- */
 
 /* ---- Typing test Code ---- */
@@ -39,7 +66,7 @@ window.onload = () => {
 const generateRandomQuote = async () => {
     const quoteHTML = document.getElementById("quote");
     try {
-        const response = await fetch("https://api.quotable.io/random?minLength=300&maxLength=400");
+        // const response = await fetch("https://api.quotable.io/random?minLength=300&maxLength=400");
         let data = await response.json();
         quote = data.content;
         // quoteHTML.innerHTML = quote;
