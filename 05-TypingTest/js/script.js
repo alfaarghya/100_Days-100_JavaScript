@@ -66,7 +66,7 @@ window.onload = () => {
 const generateRandomQuote = async () => {
     const quoteHTML = document.getElementById("quote");
     try {
-        // const response = await fetch("https://api.quotable.io/random?minLength=300&maxLength=400");
+        const response = await fetch("https://api.quotable.io/random?minLength=300&maxLength=400");
         let data = await response.json();
         quote = data.content;
         // quoteHTML.innerHTML = quote;
