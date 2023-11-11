@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <title>Typing Test</title>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
@@ -13,35 +14,53 @@
 
     <div class="container">
 
-        <div class="info">
-            <p>TIme : <span id="time">0s</span></p>
-            <p>Mistake : <span id="mistake">0</span></p>
-        </div>
+        <div class="box1 result-hide">
 
-        <div id="quote"></div>
+            <div class="info">
+                <p>TIME</p>
+                <span id="time">30</span>
+            </div>
 
-        <textarea name="" id="type" cols="30" rows="10" placeholder="hii"></textarea>
+            <div class="typing-area">
+                <div id="quote"></div>
+                <textarea name="" id="type" autofocus></textarea>
+            </div>
 
-        <div class="btn-body">
-            <button id="start-test" onclick="startTest()">Start Test</button>
-            <button id="stop-test" onclick="result()">Stop Test</button>
-        </div>
-
-        <div class="result">
-            <h3>Result</h3>
-            <div class="wrapper">
-                <p>Accuracy : <span id="accuracy"></span></p>
-                <p>Speed : <span id="speed"></span></p>
+            <div class="btn-body">
+                <span class="btn" id="restart-test" onclick="generateRandomQuote()">
+                    <i class="ri-restart-line"></i>
+                </span>
+                <span class="btn" id="stop-test" onclick="result()">
+                    <i class="ri-stop-circle-line"></i>
+                </span>
             </div>
         </div>
 
-        <div class="links">
+        <div class="box2 result-show">
+            <div class="result">
+                <h3>Result</h3>
+                <div class="wrapper">
+                    <p>Accuracy : <span id="accuracy"></span></p>
+                    <p>Speed : <span id="speed"></span></p>
+                    <p>Mistake : <span id="mistake">0</span></p>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="hr"></div>
+        <div class="box3">
             <a href="https://github.com/alfaArghya/100_Days-100_JavaScript/tree/main/05-TypingTest">
-                <i class="ri-github-fill"></i>
+                GitHub<i class="ri-github-fill"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/alfaarghya/">
+                LinkedIn<i class="ri-linkedin-box-fill"></i>
             </a>
         </div>
 
     </div>
+
+
 
 
     <script src="./js/script.js"></script>
