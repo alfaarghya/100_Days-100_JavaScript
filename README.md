@@ -22,3 +22,7 @@ Currently I am working on 4 no projest.
 ## #day5 Typing Test
 
 <img   src = "05-TypingTest/img/pageDemo.png">
+
+## #day6 Snake game
+
+<img   src = "06-SnakeGame/img/pageDemo.png">
