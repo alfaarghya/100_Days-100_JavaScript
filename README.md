@@ -1,7 +1,7 @@
 # 100_Days-100_JavaScript
 
 I am learning JavaScript. My goal is to implement 100 JS projects beside learning.
-Currently I am working on 4 no projest.
+Currently I am working on 7 no mini-project.
 
 ## #day1 PixelArtPalette
 
@@ -26,3 +26,7 @@ Currently I am working on 4 no projest.
 ## #day6 Snake game
 
 <img   src = "06-SnakeGame/img/pageDemo.png">
+
+## #day7 Url Shorter
+
+<img   src = "07-UrlShorter/img/pageDemo.png">

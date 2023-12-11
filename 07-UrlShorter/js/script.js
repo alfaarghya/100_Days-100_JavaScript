@@ -14,7 +14,6 @@ const tinyUrl = () => {
 }
 
 document.getElementById("short-btn").addEventListener("click", tinyUrl);
-// document.getElementById("reload-btn").addEventListener("click", () => location.reload());
 document.getElementById("copy-btn").addEventListener("click", () => {
     navigator.clipboard.writeText(tinyUrlElement.value)
 });
