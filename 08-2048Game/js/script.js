@@ -30,10 +30,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const initGame = () => {
         //fill array with 0
         game = [...Array(size)].map(element => Array(size).fill(0));
-        console.log(game);
+
         randomGenerate();
         randomGenerate();
         renderGame();
+    };
+
+    //restart the game
+    const restart = () => {
+        score = 0;
+        gameScore.textContent = '0';
+        // gameOver
+        initGame();
     };
 
 
@@ -48,8 +56,6 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             }
         }
-
-        // console.log(emptyPosition);
 
         //place random value between 2 and 4
         if (emptyPosition.length > 0) {
@@ -97,6 +103,92 @@ document.addEventListener("DOMContentLoaded", () => {
         }, 300);
     };
 
+    //press the key and move the direction & transform the game
+    const transform = (line, moveDirection) => {
+
+        let newLine = line.filter((cell) => cell !== 0);
+        if (!moveDirection) {
+            newLine.reverse();
+        }
+
+        for (let i = 0; i < newLine.length - 1; i++) {
+            if (newLine[i] === newLine[i + 1]) {
+                newLine[i] *= 2;
+                scoreUpdate(newLine[i]);
+                newLine.splice(i + 1, 1);
+            }
+        }
+        while (newLine.length < size) {
+            newLine.push(0);
+        }
+        if (!moveDirection) {
+            newLine.reverse();
+        }
+        return newLine;
+
+    };
+
+    //move the column & row 
+    const move = (direction) => {
+        let isChanged = false;
+
+        if (direction === 'ArrowUp' || direction === 'ArrowDown') {
+            for (let j = 0; j < size; j++) {
+                const column = [...Array(size)].map((_, i) => game[i][j]);
+                const newColumn = transform(column, direction === 'ArrowUp');
+                for (let i = 0; i < size; i++) {
+                    if (game[i][j] !== newColumn[i]) {
+                        isChanged = true;
+                        game[i][j] = newColumn[i];
+                    }
+                }
+            }
+        } else if (direction === 'ArrowLeft' || direction === 'ArrowRight') {
+            for (let i = 0; i < size; i++) {
+                const row = game[i];
+                const newRow = transform(row, direction === 'ArrowLeft');
+                if (row.join(',') !== newRow.join(',')) {
+                    isChanged = true;
+                    game[i] = newRow;
+                }
+            }
+        }
+
+        if (isChanged) {
+            randomGenerate();
+            renderGame();
+        }
+
+    };
+
+
+
+    //checking... is game over or not??
+    const isGameOver = () => {
+        for (let i = 0; i < size; i++) {
+            for (let j = 0; j < size; j++) {
+                if (game[i][j] === 0) {
+                    return;
+                }
+                if (j < size - 1 && game[i][j] === game[i][j + 1]) {
+                    return;
+                }
+                if (i < size - 1 && board[i][j] === board[i + 1][j]) {
+                    return;
+                }
+            }
+        }
+        //style
+    }
+
+    //key pressing
+    document.addEventListener('keydown', event => {
+        if (['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(event.key)) {
+            move(event.key);
+        }
+    });
+
+    //restart btn
 
 
     initGame();
