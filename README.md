@@ -30,3 +30,7 @@ Currently I am working on 7 no mini-project.
 ## #day7 Url Shorter
 
 <img   src = "07-UrlShorter/img/pageDemo.png">
+
+## #day8 Url Shorter
+
+<img   src = "08-2048Game/img/pageDemo.png">

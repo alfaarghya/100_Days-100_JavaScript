@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <title>2048 Game</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"
         integrity="sha512-dTsohxprpcruDm4sjU92K0/Gf1nTKVVskNHLOGMqxmokBSkfOAyCzYSB6+5Z9UlDafFRpy5xLhvpkOImeFbX6A=="
@@ -15,7 +16,7 @@
 
     <div class="container">
         <div class="gameScore">
-            <div>Score <span id="gameScore">0</span></div>
+            <div><span id="gameScore">0</span></div>
             <div>High Score <span id="gameHighScore">0</span></div>
         </div>
         <div class="gameBoard">
@@ -39,10 +40,10 @@
 
         <div class="gameOver">
             <Span>Game Over!!</Span>
+            <i class="ri-restart-line" id="restart"></i>
         </div>
 
         <div class="Controller">
-            <!-- <span>Controller</span> -->
             <i class="ri-arrow-up-circle-line" id="up-arrow"></i>
             <i class="ri-arrow-down-circle-line" id="down-arrow"></i>
             <i class="ri-arrow-right-circle-line" id="right-arrow"></i>
