@@ -1,10 +1,11 @@
 body {
-  /* height: 100vh; */
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #161a30;
+  overflow-y: hidden;
 }
 
 .container {
@@ -13,13 +14,16 @@ body {
 .gameScore {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  color: #f0ece5;
+}
+#gameScore {
+  font-size: 65px;
 }
 
 .gameBoard {
   width: 320px;
   height: 320px;
-  /* border: 1px solid #ccc; */
-  /* overflow: hidden; */
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5px;
@@ -28,7 +32,7 @@ body {
 .gameBoard .cell {
   width: 77px;
   height: 77px;
-  background-color: #f4f4f4;
+  background-color: #31304d;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,18 +90,51 @@ body {
 
 .gameOver {
   display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  background-color: #000000ef;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 10px 10px 100px black;
+}
+#restart {
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  color: #b6bbc4;
+}
+#restart:hover {
+  color: #f0ece5;
 }
 
 .Controller {
   display: none;
+  margin: 40px 0 0 0;
+  justify-content: space-evenly;
+}
+
+.Controller i {
+  font-size: 30px;
+  margin: 0 20px;
+  color: #b6bbc4;
+}
+
+.Controller i:hover {
+  color: #f0ece5;
 }
 
 .game-cell[data-value] {
-  transition: transform 0.2s, background-color 0.2s;
+  transition: transform 0.5s, background-color 0.5s;
 }
 
 .new-cell {
-  animation: appear 0.3s;
+  animation: appear 0.4s;
 }
 
 @keyframes appear {
@@ -108,5 +145,11 @@ body {
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+@media (max-width: 1024px) {
+  .Controller {
+    display: flex;
   }
 }
